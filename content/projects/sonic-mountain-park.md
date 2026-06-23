@@ -4,7 +4,7 @@ categories:
   - Licenciados
   - Parques Temáticos
 description: Parque temático com o universo do Sonic apresentando atrações como
-  cross buoy, piscina de bolinhas, parede de escalada, escorregador e área de
+  boia cross, piscina de bolinhas, parede de escalada, escorregador e área de
   games. Indicado para crianças de 4 a 12 anos.
 cover: https://dw4cenografia.com.br/wp-content/uploads/2024/05/00_0007_Background.jpg
 youtube: https://www.youtube.com/watch?v=Oz0zvfdwY-s
