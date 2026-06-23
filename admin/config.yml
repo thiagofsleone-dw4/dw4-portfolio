@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "projects"
+    label: "Projetos"
+    folder: "content/projects"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nome do Projeto", name: "title", widget: "string" }
+      - label: "Categorias"
+        name: "categories"
+        widget: "select"
+        multiple: true
+        options:
+          - "Licenciados"
+          - "Natal"
+          - "Televisão"
+          - "Parques Temáticos"
+          - "Tematizações em Shopping Center"
+          - "Restauração"
+          - "Congressos e Feiras"
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Imagem de Capa", name: "cover", widget: "image" }
+      - { label: "Link do YouTube (embed)", name: "youtube", widget: "string", required: false, hint: "Ex: https://www.youtube.com/embed/XXXXXXXXXXX" }
+      - label: "Galeria de Fotos"
+        name: "gallery"
+        widget: "list"
+        field:
+          label: "Foto"
+          name: "image"
+          widget: "image"
+      - { label: "Ordem de exibição", name: "order", widget: "number", default: 99 }
+      - { label: "Publicado", name: "published", widget: "boolean", default: true }
