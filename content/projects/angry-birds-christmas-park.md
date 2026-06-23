@@ -3,6 +3,7 @@ title: Angry Birds Christmas Park (Inédito)
 categories:
   - Licenciados
   - Natal
+  - Inédito
 description: Zona de batalha natalina com 6 atrações distribuídas em 221 m². O
   Arvorismo ocupa posição de atração central, ladeado pelo Castelo dos Porcos,
   onde teremos internamente o icônico Arco e Flecha de desentupidor de pia e o
