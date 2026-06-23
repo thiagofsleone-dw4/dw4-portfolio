@@ -3,9 +3,14 @@ title: Natal Sonic Adventure Park
 categories:
   - Licenciados
   - Natal
-description: Primeira cenografia natalina temática do Sonic no Brasil, finalista
-  do Prêmio Abrasce 2022. Mini golfe, tirolesa, parede de escalada,
-  escorregador, pista de corrida e área de games com o Sonic e seus amigos.
+description: >-
+  Natal com tradição, magia e muita aventura! No Natal Sonic Adventure Park, a
+  criançada vivencia o mundo do ouriço mais amado do planeta em meio a muita
+  diversão.
+
+  Uma das grandes atrações está no coração da árvore de Natal! Uma tirolesa incrível passa por dentro dela e apresenta um cenário todo especial. Tem também parede de escalada, escorrega, piscina de bolinhas e área de games.
+
+  Amigos do Sonic, Tails, Knucklese Amy também fazem parte do cenário de Natal, bem como o vilão Dr. Robotnik.
 cover: https://dw4cenografia.com.br/wp-content/uploads/2024/10/1.jpg
 youtube: https://www.youtube.com/watch?v=YcJmXEeACi4
 gallery:
