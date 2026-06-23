@@ -16,16 +16,12 @@ collections:
       - { label: "Nome do Projeto", name: "title", widget: "string" }
       - label: "Categorias"
         name: "categories"
-        widget: "select"
-        multiple: true
-        options:
-          - "Licenciados"
-          - "Natal"
-          - "Televisão"
-          - "Parques Temáticos"
-          - "Tematizações em Shopping Center"
-          - "Restauração"
-          - "Congressos e Feiras"
+        widget: "list"
+        hint: "Adicione, edite ou remova categorias livremente"
+        field:
+          label: "Categoria"
+          name: "category"
+          widget: "string"
       - { label: "Descrição", name: "description", widget: "text" }
       - { label: "Imagem de Capa", name: "cover", widget: "image" }
       - { label: "Link do YouTube (embed)", name: "youtube", widget: "string", required: false, hint: "Ex: https://www.youtube.com/embed/XXXXXXXXXXX" }

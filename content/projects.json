@@ -7,7 +7,7 @@
     ],
     "description": "Parque de aventura temático com tirolesas, paredes de escalada, escorregadores, piscinas de bolinhas, pistas de corrida e áreas de jogos para crianças de 4 a 12 anos, ambientado no universo do Sonic.",
     "cover": "https://dw4cenografia.com.br/wp-content/uploads/2024/10/geral_adventure.jpeg",
-    "youtube": "https://youtu.be/lgJKvpk-lFM",
+    "youtube": "https://youtu.be/lgJKvpk-lFM?si=gerQJ1lwXHkybM8D",
     "gallery": [
       {
         "image": "https://dw4cenografia.com.br/wp-content/uploads/2024/10/06.jpg"
@@ -89,9 +89,9 @@
       "Licenciados",
       "Parques Temáticos"
     ],
-    "description": "Parque temático com o universo do Sonic apresentando atrações como cross buoy, piscina de bolinhas, parede de escalada, escorregador e área de games. Indicado para crianças de 4 a 12 anos.",
+    "description": "Parque temático com o universo do Sonic apresentando atrações como boia cross, piscina de bolinhas, parede de escalada, escorregador e área de games. Indicado para crianças de 4 a 12 anos.",
     "cover": "https://dw4cenografia.com.br/wp-content/uploads/2024/05/00_0007_Background.jpg",
-    "youtube": null,
+    "youtube": "https://www.youtube.com/watch?v=Oz0zvfdwY-s",
     "gallery": [
       {
         "image": "https://dw4cenografia.com.br/wp-content/uploads/2024/05/00_0006_02.jpg"
@@ -702,17 +702,33 @@
     "slug": "natal-a-bordo"
   },
   {
-    "title": "Angry Birds Christmas Park",
+    "title": "Angry Birds Christmas Park (Inédito)",
     "categories": [
       "Licenciados",
       "Natal"
     ],
-    "description": "",
-    "cover": "",
+    "description": "Zona de batalha natalina com 6 atrações distribuídas em 221 m². O Arvorismo ocupa posição de atração central, ladeado pelo Castelo dos Porcos, onde teremos internamente o icônico Arco e Flecha de desentupidor de pia e o Arremesso de Ovos. Para os menores teremos o Parque dos Angry Birds com a pista de obstáculos, 2 escorregas e uma piscina de ovinhos. Atrás do castelo dos Porcos teremos a “Muralha do Rei Porco” uma Parede de Escalada dupla. O Trono do Papai Noel estará fora da praça principal e os pontos instagramáveis completam a jornada temática.",
+    "cover": "/images/imagem2.png",
     "youtube": null,
-    "gallery": [],
+    "gallery": [
+      "/images/imagem3.png",
+      "/images/imagem4.png",
+      "/images/imagem5.png",
+      "/images/imagem6.png",
+      "/images/imagem7.png",
+      "/images/imagem8.png",
+      "/images/imagem9.png",
+      "/images/imagem10.png",
+      "/images/imagem11.png",
+      "/images/imagem12.png",
+      "/images/imagem13.png",
+      "/images/imagem14.png",
+      "/images/imagem15.png",
+      "/images/screenshot-2026-06-22-220122.png",
+      "/images/imagem16.png"
+    ],
     "order": 13,
-    "published": false,
+    "published": true,
     "slug": "angry-birds-christmas-park"
   },
   {
@@ -1007,5 +1023,17 @@
     "order": 20,
     "published": true,
     "slug": "unimed"
+  },
+  {
+    "title": "NATGEO - Sinta o Planeta",
+    "categories": [
+      "Licenciados"
+    ],
+    "description": "Do ar ao deserto, do mar às florestas. A DW4 foi responsável pela cenografia da exposição Sinta o Planeta, da National Geographic, que esteve no Boulevard Shopping Belém, da rede Allos, durante a COP 30 Brasil, a Conferência das Nações Unidas sobre as Mudanças Climáticas de 2025.\n\nUm verdadeiro convite para mergulharmos nos mistérios e maravilhas do nosso planeta guiados pelas imagens das séries e documentários do Disney+. Um lembrete da riqueza da Terra e um chamado para proteger esse tesouro. Com imagens, sons, e uma ambientação envolvente relacionadas a atmosfera, desertos, oceanos, florestas, zonas geladas e eventos meteorológicos extremos, a exposição propôs uma experiência única de conscientização, mostrando como as escolhas cotidianas de cada indivíduo impactam diretamente o equilíbrio do planeta.",
+    "cover": "/images/screenshot-2026-06-22-214626.png",
+    "youtube": "https://www.youtube.com/watch?v=Ir8zH7kU1tw&t=3s",
+    "order": 99,
+    "published": true,
+    "slug": "natgeo-sinta-o-planeta"
   }
 ]

@@ -30,7 +30,9 @@
       // fallback: try to load individually — this path only for local dev without build
       allProjects = [];
     }
-    renderGrid(allProjects.filter(p => p.published !== false));
+    const published = allProjects.filter(p => p.published !== false);
+    buildFilters(published);
+    renderGrid(published);
   }
 
   // ---- GRID RENDERING ----
@@ -79,20 +81,33 @@
 
   // ---- FILTERS ----
 
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  function buildFilters(projects) {
+    const container = document.getElementById('filters-scroll');
+    const categories = [...new Set(
+      projects.flatMap(p => Array.isArray(p.categories) ? p.categories : [])
+    )].sort();
 
-      const filter = btn.dataset.filter;
-      const published = allProjects.filter(p => p.published !== false);
-      const filtered = filter === 'all'
-        ? published
-        : published.filter(p => Array.isArray(p.categories) && p.categories.includes(filter));
-
-      renderGrid(filtered);
+    categories.forEach(cat => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.dataset.filter = cat;
+      btn.textContent = cat;
+      container.appendChild(btn);
     });
-  });
+
+    container.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        const published = allProjects.filter(p => p.published !== false);
+        const filtered = filter === 'all'
+          ? published
+          : published.filter(p => Array.isArray(p.categories) && p.categories.includes(filter));
+        renderGrid(filtered);
+      });
+    });
+  }
 
   // ---- MODAL ----
 
