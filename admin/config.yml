@@ -6,6 +6,22 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
+  - name: "settings"
+    label: "Configurações"
+    files:
+      - name: "filters"
+        label: "Ordem dos Filtros"
+        file: "content/filters.json"
+        fields:
+          - label: "Categorias (arraste para reordenar)"
+            name: "categories"
+            widget: "list"
+            hint: "A ordem aqui define a ordem dos botões de filtro no site"
+            field:
+              label: "Categoria"
+              name: "category"
+              widget: "string"
+
   - name: "projects"
     label: "Projetos"
     folder: "content/projects"

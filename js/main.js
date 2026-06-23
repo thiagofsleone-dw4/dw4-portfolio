@@ -2,6 +2,7 @@
   'use strict';
 
   let allProjects = [];
+  let filterOrder = [];
   let visibleProjects = [];
   let currentProjectIndex = 0;
   let lightboxImages = [];
@@ -23,12 +24,15 @@
 
   async function loadProjects() {
     try {
-      const res = await fetch('content/projects.json');
-      if (!res.ok) throw new Error('not found');
-      allProjects = await res.json();
+      const [projRes, filtersRes] = await Promise.all([
+        fetch('content/projects.json'),
+        fetch('content/filters.json')
+      ]);
+      allProjects = projRes.ok ? await projRes.json() : [];
+      filterOrder = filtersRes.ok ? (await filtersRes.json()).categories || [] : [];
     } catch {
-      // fallback: try to load individually — this path only for local dev without build
       allProjects = [];
+      filterOrder = [];
     }
     const published = allProjects.filter(p => p.published !== false);
     buildFilters(published);
@@ -83,9 +87,17 @@
 
   function buildFilters(projects) {
     const container = document.getElementById('filters-scroll');
-    const categories = [...new Set(
+    const allCats = [...new Set(
       projects.flatMap(p => Array.isArray(p.categories) ? p.categories : [])
-    )].sort();
+    )];
+
+    // Respect filterOrder; append any unknown categories at the end
+    const ordered = [
+      ...filterOrder.filter(c => allCats.includes(c)),
+      ...allCats.filter(c => !filterOrder.includes(c))
+    ];
+
+    const categories = ordered;
 
     categories.forEach(cat => {
       const btn = document.createElement('button');
