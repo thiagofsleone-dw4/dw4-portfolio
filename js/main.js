@@ -125,7 +125,7 @@
     if (project.youtube) {
       videoHtml = `
         <p class="modal-section-title">Vídeo Imersivo</p>
-        <div class="modal-video"><iframe src="${escHtml(project.youtube)}" allowfullscreen loading="lazy" title="Vídeo do projeto ${escHtml(project.title)}"></iframe></div>
+        <div class="modal-video"><iframe src="${escHtml(toEmbedUrl(project.youtube))}" allowfullscreen loading="lazy" title="Vídeo do projeto ${escHtml(project.title)}"></iframe></div>
       `;
     }
 
@@ -217,6 +217,19 @@
   });
 
   // ---- UTILS ----
+
+  function toEmbedUrl(url) {
+    if (!url) return '';
+    // já é embed
+    if (url.includes('/embed/')) return url;
+    // youtu.be/ID
+    const short = url.match(/youtu\.be\/([^?&]+)/);
+    if (short) return `https://www.youtube.com/embed/${short[1]}`;
+    // youtube.com/watch?v=ID
+    const watch = url.match(/[?&]v=([^?&]+)/);
+    if (watch) return `https://www.youtube.com/embed/${watch[1]}`;
+    return url;
+  }
 
   function escHtml(str) {
     if (!str) return '';
