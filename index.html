@@ -112,5 +112,14 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script>
+    // Redireciona tokens do Netlify Identity para o painel admin
+    if (window.location.hash && window.location.hash.includes('invite_token=')) {
+      window.location.href = '/admin' + window.location.hash;
+    }
+    if (window.location.hash && window.location.hash.includes('recovery_token=')) {
+      window.location.href = '/admin' + window.location.hash;
+    }
+  </script>
 </body>
 </html>
