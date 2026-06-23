@@ -1,5 +1,5 @@
 ---
-title: Natal Sonic Adventure
+title: Natal Sonic Adventure Park
 categories:
   - Licenciados
   - Natal
