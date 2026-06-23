@@ -7,7 +7,7 @@ description: Parque de aventura temático com tirolesas, paredes de escalada,
   escorregadores, piscinas de bolinhas, pistas de corrida e áreas de jogos para
   crianças de 4 a 12 anos, ambientado no universo do Sonic.
 cover: https://dw4cenografia.com.br/wp-content/uploads/2024/10/geral_adventure.jpeg
-youtube: https://www.youtube.com/watch?v=lgJKvpk-lFM
+youtube: https://youtu.be/lgJKvpk-lFM?si=gerQJ1lwXHkybM8D
 gallery:
   - image: https://dw4cenografia.com.br/wp-content/uploads/2024/10/06.jpg
   - image: https://dw4cenografia.com.br/wp-content/uploads/2024/10/01.jpeg
