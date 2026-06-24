@@ -1,5 +1,5 @@
 ---
-title: Natal dos Ursos Polares
+title: Natal Parque dos Ursos Polares
 categories:
   - Natal
 description: Cenografia natalina temática com ursos polares e neve, criando uma
