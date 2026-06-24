@@ -18,5 +18,5 @@ gallery:
   - image: https://dw4cenografia.com.br/wp-content/uploads/2024/10/01-1.jpg
   - image: https://dw4cenografia.com.br/wp-content/uploads/2024/10/02-2.jpg
 order: 11
-published: false
+published: true
 ---
