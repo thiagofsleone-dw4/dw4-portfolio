@@ -2,8 +2,9 @@ backend:
   name: github
   repo: thiagofsleone-dw4/dw4-portfolio
   branch: main
-  auth_type: pkce
-  app_id: Ov23liqjeFru4ajvODcu
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  site_domain: dw4-portfolio.netlify.app
 
 media_folder: "images"
 public_folder: "/images"
